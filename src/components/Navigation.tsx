@@ -1,18 +1,18 @@
-import { Menu, X, Phone, Facebook } from 'lucide-react';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Menu, X, UserPlus } from "lucide-react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
   const navItems = [
-    { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Newsletter', path: '/newsletter' },
-    { label: 'History', path: '/history' },
-    { label: 'Aims', path: '/aims' },
-    { label: 'Testimonials', path: '/testimonials' },
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Newsletter", path: "/newsletter" },
+    { label: "Committee", path: "/committee" },
+    { label: "Aims", path: "/aims" },
+    { label: "Testimonials", path: "/testimonials" },
   ];
 
   const handleNavClick = (path: string) => {
@@ -26,11 +26,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-28">
           {/* Logo and Brand */}
           <div className="flex items-center space-x-4">
-            <img
-              src="/logo.jpg"
-              alt="IOOB Logo"
-              className="h-16 w-auto"
-            />
+            <img src="/logo.jpg" alt="IOOB Logo" className="h-16 w-auto" />
             <div>
               <h1 className="text-3xl font-bold text-white">IOOB</h1>
               <p className="text-sm text-blue-100 font-semibold">Melbourne</p>
@@ -51,20 +47,16 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Contact Info - Desktop */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <div className="flex items-center space-x-2 text-white">
-              <Phone size={24} />
-              <span className="text-lg font-semibold">0417 538 095</span>
-            </div>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-amber-300 transition-colors"
+          {/* Join - Desktop */}
+          <div className="hidden lg:flex items-center">
+            <button
+              type="button"
+              onClick={() => handleNavClick("/join")}
+              className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-blue-900 font-bold text-lg px-6 py-3 rounded-lg transition-colors shadow-md"
             >
-              <Facebook size={28} />
-            </a>
+              <UserPlus size={22} aria-hidden />
+              Join Now
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -90,20 +82,15 @@ export default function Navigation() {
                 </button>
               ))}
             </div>
-            <div className="border-t border-blue-700 pt-6 px-6 space-y-4">
-              <div className="flex items-center space-x-3 text-white">
-                <Phone size={24} />
-                <span className="text-lg font-semibold">0417 538 095</span>
-              </div>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-white hover:text-amber-300 transition-colors"
+            <div className="border-t border-blue-700 pt-6 px-6">
+              <button
+                type="button"
+                onClick={() => handleNavClick("/join")}
+                className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-blue-900 font-bold text-lg px-6 py-4 rounded-lg transition-colors"
               >
-                <Facebook size={24} />
-                <span className="text-lg font-semibold">Facebook</span>
-              </a>
+                <UserPlus size={22} aria-hidden />
+                Join Now
+              </button>
             </div>
           </div>
         )}

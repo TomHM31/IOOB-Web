@@ -1,4 +1,4 @@
-import { Facebook, Mail, Heart } from 'lucide-react';
+import { Facebook, Mail, Heart } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,7 +8,9 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">About IOOB-Melbourne</h3>
             <p className="text-blue-100 leading-relaxed">
-              A community group dedicated to friendship, camaraderie, and supporting local charities. Meeting every third Thursday of every second month.
+              A community group dedicated to friendship, camaraderie, and
+              supporting local charities. Meeting every third Thursday of every
+              second month.
             </p>
           </div>
 
@@ -48,10 +50,11 @@ export default function Footer() {
 
         <div className="border-t border-blue-700 pt-8 text-center">
           <p className="text-blue-100 flex items-center justify-center gap-2 mb-2">
-            Made with <Heart size={16} className="text-red-400" /> for our community
+            Made with <Heart size={16} className="text-red-400" /> for our
+            community
           </p>
           <p className="text-blue-200 text-sm">
-            &copy; 2024 IOOB-Melbourne. All rights reserved.
+            &copy; 2026 IOOB-Melbourne. All rights reserved.
           </p>
         </div>
       </div>
