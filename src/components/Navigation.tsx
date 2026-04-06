@@ -11,7 +11,6 @@ export default function Navigation() {
     { label: "About", path: "/about" },
     { label: "Newsletter", path: "/newsletter" },
     { label: "Committee", path: "/committee" },
-    { label: "Aims", path: "/aims" },
     { label: "Testimonials", path: "/testimonials" },
   ];
 

@@ -23,11 +23,11 @@ export default function Home() {
       image: "/ioob2.jpg",
     },
     {
-      id: "aims",
-      title: "Our Aims",
+      id: "newsletter",
+      title: "Newsletter",
       description:
-        "Understand the core objectives that guide our mission. We aim to build community, provide support, and make a lasting charitable impact.",
-      icon: "🎯",
+        "Stay updated with the latest news and events from IOOB Melbourne. Subscribe to our newsletter to never miss an update.",
+      icon: "📰",
       image: "/ioob3.jpg",
     },
     {
