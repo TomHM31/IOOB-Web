@@ -114,7 +114,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-20">
           <div className="p-8 bg-blue-50 rounded-lg">
-            <div className="text-5xl font-bold text-red-700 mb-2">500+</div>
+            <div className="text-5xl font-bold text-red-700 mb-2">200+</div>
             <p className="text-xl text-gray-700 font-semibold">
               Active Members
             </p>
@@ -132,9 +132,9 @@ export default function Home() {
           </div>
 
           <div className="p-8 bg-blue-50 rounded-lg">
-            <div className="text-5xl font-bold text-red-700 mb-2">100+</div>
+            <div className="text-5xl font-bold text-red-700 mb-2">1000+</div>
             <p className="text-xl text-gray-700 font-semibold">
-              Charities Supported
+              Individuals Supported
             </p>
             <p className="text-gray-600 mt-2">Making a real difference</p>
           </div>
@@ -149,7 +149,10 @@ export default function Home() {
             out to learn more about membership and how you can be part of
             something special.
           </p>
-          <button className="bg-red-700 hover:bg-red-800 text-white font-bold py-4 px-10 rounded-lg transition-colors text-lg">
+          <button
+            onClick={() => navigate("/Join")}
+            className="bg-red-700 hover:bg-red-800 text-white font-bold py-4 px-10 rounded-lg transition-colors text-lg"
+          >
             Get in Touch
           </button>
         </div>
